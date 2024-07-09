@@ -1,22 +1,38 @@
-import streamlit as st
+# This is a Handwriting Analyzer Python script.
 import base64
-#from PIL import Image
-#import io
 
-uploaded_files = st.file_uploader("Choose a  file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
+import anthropic
+import streamlit as st
+from PIL import Image
+from io import BytesIO
 
-    if uploaded_file is not None:
-        bytes_data = uploaded_file.read()
+anthropicSecretKey = "A"
 
-        base64_bytes = base64.b64encode(bytes_data)
-
-        base64_string = base64_bytes.decode('utf-8')
-
-        # print(base64_string)
-        st.image(uploaded_file)
-        st.write(base64_string)
-    else:
-        st.write('Please upload a correct image ')
+client = anthropic.Anthropic(
+    # defaults to os.environ.get("ANTHROPIC_API_KEY")
+    api_key=anthropicSecretKey,
+)
 
 
+def analyze_handwriting(image_param):
+    buffered = BytesIO()
+    image_param.save(buffered, format="JPEG")
+    image_data = base64.b64encode(buffered.getvalue()).decode()
+
+    return image_data
+
+
+st.set_page_config(page_title="Analyser l'écriture manuscrite")
+st.title("Analyser l'écriture manuscrite")
+uploaded_file = st.file_uploader("Choisissez une image d'écriture manuscrite ou de signature.",
+                                 type=["png", "jpg", "jpeg"])
+if uploaded_file is not None:
+    image = Image.open(uploaded_file)
+    st.image(image, caption="Image téléchargée", use_column_width=True)
+    # st.title("Analyser l'écriture manuscrite")
+
+    if st.button("Analyser l'écriture manuscrite"):
+        with st.spinner("Analyse en cours..."):
+            analysis = analyze_handwriting(image)
+            st.subheader("Résultats de l'analyse:")
+            st.write(analysis)
