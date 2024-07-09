@@ -1,6 +1,6 @@
 # This is a Handwriting Analyzer Python script.
 import base64
-
+import time
 import anthropic
 import streamlit as st
 from PIL import Image
@@ -33,6 +33,8 @@ if uploaded_file is not None:
 
     if st.button("Analyser l'écriture manuscrite"):
         with st.spinner("Analyse en cours..."):
+
             analysis = analyze_handwriting(image)
             st.subheader("Résultats de l'analyse:")
             st.write(analysis)
+
