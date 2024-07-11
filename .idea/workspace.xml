@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eba86ab9-b70a-4b00-ae44-8bc52c5288ba" name="Changes" comment="Revise the code to enable AI integration.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -182,7 +181,7 @@
       <workItem from="1720454098241" duration="3838000" />
       <workItem from="1720517268474" duration="8925000" />
       <workItem from="1720601608364" duration="1180000" />
-      <workItem from="1720691861082" duration="1603000" />
+      <workItem from="1720691861082" duration="2673000" />
     </task>
     <task id="LOCAL-00001" summary="Revise the code to enable AI integration.">
       <created>1720530339099</created>
