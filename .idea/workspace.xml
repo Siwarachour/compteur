@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eba86ab9-b70a-4b00-ae44-8bc52c5288ba" name="Changes" comment="Revise the code to enable AI integration.">
-      <change afterPath="$PROJECT_DIR$/check-analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting-analyser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check-analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/check-analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +183,7 @@
       <workItem from="1720601608364" duration="1180000" />
       <workItem from="1720691861082" duration="3128000" />
       <workItem from="1720695443542" duration="1507000" />
-      <workItem from="1720703836747" duration="7129000" />
+      <workItem from="1720703836747" duration="7848000" />
     </task>
     <task id="LOCAL-00001" summary="Revise the code to enable AI integration.">
       <created>1720530339099</created>

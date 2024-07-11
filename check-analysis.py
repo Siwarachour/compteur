@@ -74,8 +74,8 @@ def analyze_handwriting(image_param):
 
     return message.content[0].text
 
-st.set_page_config(page_title="Analyser Checks Of banks ")
-st.title("Analyser Checks Of banks ")
+st.set_page_config(page_title="analyseur de chèques des banques ")
+st.title("analyseur de chèques des banques ")
 uploaded_file = st.file_uploader("Choisissez une image d'un chéque .",
                                  type=["png", "jpg", "jpeg"])
 if uploaded_file is not None:
@@ -83,10 +83,11 @@ if uploaded_file is not None:
     st.image(image, caption="Image téléchargée", use_column_width=True)
     # st.title("Analyser l'écriture manuscrite")
 
-    if st.button("Analyser checks of banks"):
+    if st.button("analyseur de chèques des banques"):
         with st.spinner("Analyse en cours..."):
 
             analysis = analyze_handwriting(image)
-            st.subheader("Check information:")
+            st.subheader("Vérifier les informations:")
             st.json(analysis)
+
 
