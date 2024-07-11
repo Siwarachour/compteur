@@ -28,8 +28,21 @@ def analyze_handwriting(image_param):
 
                 "content": [
                     {
+                        "type": "image",
+                        "source": {
+                            "type": "base64",
+                            "media_type": "image/jpeg",
+                            "data": image_data
+                        }
+    },
+                    {
                         "type": "text",
-                        "text": "Hi"
+                        "text": """
+                              En français, décrivez l'écriture manuscrite dans cette image.
+                               Listez les caractéristiques observées et leurs possibles indications sur l'auteur. Incluez la pression, l'inclinaison, la taille, l'espacement et tout autre élément notable.
+                               Présentez directement sous forme de liste numérotée, sans introduction.
+                        """
+
                     }
                 ]
             }
