@@ -38,9 +38,10 @@ def analyze_handwriting(image_param):
                     {
                         "type": "text",
                         "text": """
-                              En français, décrivez l'écriture manuscrite dans cette image.
-                               Listez les caractéristiques observées et leurs possibles indications sur l'auteur. Incluez la pression, l'inclinaison, la taille, l'espacement et tout autre élément notable.
-                               Présentez directement sous forme de liste numérotée, sans introduction.
+                               Please ,Analysez l'écriture manuscrite visible dans cette image en français.
+                                Décrivez les caractéristiques observées et ce qu'elles pourraient indiquer sur l'auteur, en incluant des aspects comme la pression, l'inclinaison, la taille, l'espacement et tout autre élément notable.
+                                Présentez votre analyse sous forme de liste numérotée,
+                               en commençant directement par le premier point sans introduction et sans titre Résultats de l'analyse.
                         """
 
                     }
