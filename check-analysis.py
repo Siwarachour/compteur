@@ -19,6 +19,7 @@ def analyze_handwriting(image_param):
     image_param.save(buffered, format="JPEG")
     image_data = base64.b64encode(buffered.getvalue()).decode()
 
+
     message = client.messages.create(
         model="claude-3-5-sonnet-20240620",
         max_tokens=1000,
@@ -73,19 +74,19 @@ def analyze_handwriting(image_param):
 
     return message.content[0].text
 
-st.set_page_config(page_title="Analyser l'écriture manuscrite")
-st.title("Analyser l'écriture manuscrite")
-uploaded_file = st.file_uploader("Choisissez une image d'écriture manuscrite ou de signature.",
+st.set_page_config(page_title="Analyser Checks Of banks ")
+st.title("Analyser Checks Of banks ")
+uploaded_file = st.file_uploader("Choisissez une image d'un chéque .",
                                  type=["png", "jpg", "jpeg"])
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption="Image téléchargée", use_column_width=True)
     # st.title("Analyser l'écriture manuscrite")
 
-    if st.button("Analyser l'écriture manuscrite"):
+    if st.button("Analyser checks of banks"):
         with st.spinner("Analyse en cours..."):
 
             analysis = analyze_handwriting(image)
-            st.subheader("Résultats de l'analyse:")
+            st.subheader("Check information:")
             st.json(analysis)
 
