@@ -39,16 +39,26 @@ def analyze_handwriting(image_param):
                     {
                         "type": "text",
                         "text": """
-                              {
-   "Analysez l'écriture manuscrite visible dans cette image en français.
-    Décrivez les caractéristiques observées et ce qu'elles pourraient indiquer sur l'auteur, en incluant des aspects comme la pression, l'inclinaison, la taille, l'espacement et tout autre élément notable.
-    Présentez votre analyse sous forme de liste numérotée, en commençant directement par le premier point sans introduction ni titre.
-    Ajoutez une conclusion à la fin de l'analyse.
-    Présentez le résultat en JSON."
+Analysez les données visibles sur ce chèque en français.
+Décrivez les informations observées et ce qu'elles indiquent sur le chèque, en incluant des éléments comme le nom du titulaire du compte, l'adresse du titulaire, le nom de la banque, le numéro de compte, le numéro de chèque, le code banque et code guichet, la date, le montant en chiffres, le montant en lettres, le nom du bénéficiaire, la signature, et le numéro d'identification.
+Présentez votre analyse sous forme de JSON en utilisant la structure suivante :
+{
+  \"Nom du Titulaire\": \"\",
+  \"Adresse\": \"\",
+  \"Nom de la Banque\": \"\",
+  \"Numéro de Compte\": \"\",
+  \"Numéro de Chèque\": \"\",
+  \"Code Banque et Guichet\": \"\",
+  \"Date\": \"\",
+  \"Montant en Chiffres\": \"\",
+  \"Montant en Lettres\": \"\",
+  \"Nom du Bénéficiaire\": \"\",
+  \"Signature\": \"\",
+ \"Numéro d'Identification\": \"\"
 }
+Répondez uniquement avec un JSON valide."
 
-
-                        """
+                 """
 
                     },
                 ]
@@ -59,7 +69,6 @@ def analyze_handwriting(image_param):
     )
 
     return message.content[0].text
-
 
 st.set_page_config(page_title="Analyser l'écriture manuscrite")
 st.title("Analyser l'écriture manuscrite")
