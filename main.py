@@ -39,24 +39,27 @@ def analyze_handwriting(image_param):
                     {
                         "type": "text",
                         "text": """
-Analysez les données visibles sur ce chèque en français.
-Décrivez les informations observées et ce qu'elles indiquent sur le chèque, en incluant des éléments comme le nom du titulaire du compte, l'adresse du titulaire, le nom de la banque, le numéro de compte, le numéro de chèque, le code banque et code guichet, la date, le montant en chiffres, le montant en lettres, le nom du bénéficiaire, la signature, et le numéro d'identification.
-Présentez votre analyse sous forme de JSON en utilisant la structure suivante :
-{
-  \"Nom du Titulaire\": \"\",
-  \"Adresse\": \"\",
-  \"Nom de la Banque\": \"\",
-  \"Numéro de Compte\": \"\",
-  \"Numéro de Chèque\": \"\",
-  \"Code Banque et Guichet\": \"\",
-  \"Date\": \"\",
-  \"Montant en Chiffres\": \"\",
-  \"Montant en Lettres\": \"\",
-  \"Nom du Bénéficiaire\": \"\",
-  \"Signature\": \"\",
- \"Numéro d'Identification\": \"\"
-}
-Répondez uniquement avec un JSON valide."
+                                Analysez les données visibles sur ce chèque en français.
+                                Décrivez les informations observées et ce qu'elles indiquent sur le chèque, en incluant des éléments comme
+                                le nom du titulaire du compte, l'adresse du titulaire, le nom de la banque, le numéro de compte, le numéro de chèque,
+                                le code banque et code guichet, la date, le montant en chiffres, le montant en lettres,
+                                le nom du bénéficiaire, la signature, et le numéro d'identification.
+                                Présentez votre analyse sous forme de JSON en utilisant la structure suivante :
+                                {
+                                \"Nom du Titulaire\": \"\",
+                                \"Adresse\": \"\",
+                                \"Nom de la Banque\": \"\",
+                                \"Numéro de Compte\": \"\",
+                                \"Numéro de Chèque\": \"\",
+                                \"Code Banque et Guichet\": \"\",
+                                \"Date\": \"\",
+                                \"Montant en Chiffres\": \"\",
+                                \"Montant en Lettres\": \"\",
+                                \"Nom du Bénéficiaire\": \"\",
+                                \"Signature\": \"\",
+                                \"Numéro d'Identification\": \"\"
+                    }
+                    Répondez uniquement avec un JSON valide."
 
                  """
 
