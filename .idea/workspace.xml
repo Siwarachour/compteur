@@ -57,23 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\siwar\PycharmProjects\App" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Amine" type="PythonConfigurationType" factoryName="Python">
       <module name="App" />
       <option name="ENV_FILES" value="" />
@@ -181,7 +181,8 @@
       <workItem from="1720454098241" duration="3838000" />
       <workItem from="1720517268474" duration="8925000" />
       <workItem from="1720601608364" duration="1180000" />
-      <workItem from="1720691861082" duration="2673000" />
+      <workItem from="1720691861082" duration="3128000" />
+      <workItem from="1720695443542" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="Revise the code to enable AI integration.">
       <created>1720530339099</created>
