@@ -18,6 +18,7 @@ def analyze_handwriting(image_param):
     buffered = BytesIO()
     image_param.save(buffered, format="JPEG")
     image_data = base64.b64encode(buffered.getvalue()).decode()
+
     message = client.messages.create(
         model="claude-3-5-sonnet-20240620",
         max_tokens=1000,
@@ -49,11 +50,14 @@ def analyze_handwriting(image_param):
 
                         """
 
-                    }
+                    },
                 ]
             }
+
         ]
+
     )
+
     return message.content[0].text
 
 
@@ -71,5 +75,5 @@ if uploaded_file is not None:
 
             analysis = analyze_handwriting(image)
             st.subheader("Résultats de l'analyse:")
-            st.write(analysis)
+            st.json(analysis)
 
