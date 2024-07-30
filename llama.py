@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-API_TOKEN = "r8_USSnW9a9gBQ2NikEQcR7imePfHrUNex2JnpS3"
+API_TOKEN = "r8_D328v78uIt3F2QDiAuUyMwaZPwbNf582637da"
 MODEL_VERSION = "2796ee9483c3fd7aa2e171d38f4ca12251a30609463dcfd4cd76703f22e96cdf"
 
 
