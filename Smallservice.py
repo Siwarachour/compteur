@@ -2,8 +2,8 @@ import PyPDF2
 import streamlit as st
 import anthropic
 
-anthropicSecretKey = "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"
-client = anthropic.Anthropic(api_key=anthropicSecretKey)
+
+client = anthropic.Anthropic()
 
 def ask_claude(prompt, model="claude-3-opus-20240229"):
     message = client.messages.create(

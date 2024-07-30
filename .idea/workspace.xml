@@ -7,7 +7,6 @@
     <list default="true" id="eba86ab9-b70a-4b00-ae44-8bc52c5288ba" name="Changes" comment="Revise the code to enable AI integration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smallservice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Smallservice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llama.py" beforeDir="false" afterPath="$PROJECT_DIR$/llama.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +216,7 @@
       <workItem from="1721632156884" duration="6689000" />
       <workItem from="1721809322436" duration="1176000" />
       <workItem from="1722238937454" duration="4249000" />
-      <workItem from="1722326453691" duration="8447000" />
+      <workItem from="1722326453691" duration="13492000" />
     </task>
     <task id="LOCAL-00001" summary="Revise the code to enable AI integration.">
       <created>1720530339099</created>
