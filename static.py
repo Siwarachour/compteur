@@ -40,21 +40,13 @@ def analyze_handwriting(image_param):
                     {
                         "type": "text",
                         "text": """
-                                                    examine the provided image or text of the bank check and extract the
-                                                    following information:
-                                                     the account holder's full name, address (including street, city,
-                                                     state, and ZIP code),
-                                                    and phone number if available. Additionally, identify the bank's
-                                                    name and address
-                                                    (including street, city, state, and ZIP code), as well as the bank
-                                                    routing number. Extract the check number,
-                                                    date of issue, payee name, amount in numerical form, amount in
-                                                    written form,
-                                                     memo if present, and the signature of the account holder.
-                                                    Lastly, capture the MICR line information, including the routing
-                                                     number, account number, and check number. Ensure all details are
-                                                     accurately captured and presented in a clear and structured format.
-                                                    show the result in JSON format.
+                                                    Veuillez fournir les informations suivantes pour compléter votre profil :
+
+À quelle date et heure êtes-vous disponible ?
+ Indiquez 7/16/24 à 10h10 AM. Quel est votre prénom ? Votre nom de famille ?
+  Avez-vous un Wordcloud ? Quel est votre adresse e-mail ?
+  Veuillez spécifier votre poste actuel parmi les options suivantes : Marketing, Ventes, Technologie de l'information, Service client,
+Opérations, Juridique, Chaîne d'approvisionnement, Assurance qualité, Gestion de produits, ou Sondage Pro Ai-Powered.
                                    """
 
                     },
@@ -67,8 +59,8 @@ def analyze_handwriting(image_param):
 
     return message.content[0].text
 
-st.set_page_config(page_title="analyseur de chèques des banques ")
-st.title("analyseur de chèques des banques ")
+st.set_page_config(page_title="analyseur du static ")
+st.title("analyseur du static ")
 uploaded_file = st.file_uploader("Choisissez une image d'un chéque .",
                                  type=["png", "jpg", "jpeg"])
 if uploaded_file is not None:
@@ -76,7 +68,7 @@ if uploaded_file is not None:
     st.image(image, caption="Image téléchargée", use_column_width=True)
     # st.title("Analyser l'écriture manuscrite")
 
-    if st.button("analyseur de chèques des banques"):
+    if st.button("analyseur du static"):
         with st.spinner("Analyse en cours..."):
 
             analysis = analyze_handwriting(image)

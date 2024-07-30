@@ -89,4 +89,5 @@ def main():
         print("Aucune réponse n'a pu être obtenue.")
 
 
-main()
+if __name__ == "_main_":
+    main()
