@@ -75,7 +75,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 st.title("PDF File Analyser")
-uploaded_file = st.file_uploader("Choose a PDF file.", type=["pdf"], key="uploader")
+uploaded_file = st.file_uploader("Choooose a PDF file.", type=["pdf"], key="uploader")
 
 if uploaded_file is not None:
     with st.spinner("Analysing..."):
